@@ -28,3 +28,5 @@ the `imexam` menu open and a line plot.
 ![imexam example](img/imexam_example.jpg)
 
 ## 3D visualization
+
+[`Jdavis`](https://jdaviz.readthedocs.io/en/latest/index.html) is the new JWST python package which includes Cubeviz for visualizing data cubes from a spectrograph, SpecVis for 1D spectra and quick-look analysis and MOSViz for multi-object spectrographs.
