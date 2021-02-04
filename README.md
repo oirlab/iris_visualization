@@ -22,11 +22,30 @@ After the image appears on DS9, in the Python terminal type:
 
 to load a menu of all different algorithms that can be executed.
 
-See an example below of a IRIS reduced frame loaded in DS9 with
-the `imexam` menu open and a line plot.
+See an example below of a IRIS reduced frame loaded in DS9 with the `imexam` menu open and a line plot.
 
 ![imexam example](img/imexam_example.jpg)
 
 ## 3D visualization
 
 [`Jdavis`](https://jdaviz.readthedocs.io/en/latest/index.html) is the new JWST python package which includes Cubeviz for visualizing data cubes from a spectrograph, SpecVis for 1D spectra and quick-look analysis and MOSViz for multi-object spectrographs.
+
+### Test data
+
+[On Figshare](https://figshare.com/account/projects/69722/articles/13718131), I posted a simulated observation with the IRIS spectrograph (created by Nils-Erik Bjorn Rundquist). However this file format is not recognized by `Jdavis`, therefore I got the example file from the `Jdaviz` example, zeroed the flux, and injected the simulation with IRIS.
+
+### Launch 3D visualization
+
+We can experiment with `Jdaviz` launching:
+
+    jdaviz hybrid_manga_iris.fits --layout=cubeviz
+
+The `Jdaviz` allows to:
+
+* go interactively thorugh all the slices
+* select a subset of the data in pixel space or frequency bin
+* apply a set of algorithms from the builtin library
+
+See for example this screenshot (datasets had different shapes, the rest of the data is zeroed):
+
+![jdaviz example](img/jdaviz_example.jpg)
