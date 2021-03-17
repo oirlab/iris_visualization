@@ -32,13 +32,13 @@ See an example below of a IRIS reduced frame loaded in DS9 with the `imexam` men
 
 ### Test data
 
-[On Figshare](https://figshare.com/account/projects/69722/articles/13718131), I posted a simulated observation with the IRIS spectrograph (created by Nils-Erik Bjorn Rundquist). However this file format is not recognized by `Jdavis`, therefore I got the example file from the `Jdaviz` example, zeroed the flux, and injected the simulation with IRIS.
+[On Figshare](https://figshare.com/articles/dataset/Jdaviz_IFU_test_files/13718131), I posted a simulated observation with the IRIS spectrograph (created by Nils-Erik Bjorn Rundquist).
 
 ### Launch 3D visualization
 
 We can experiment with `Jdaviz` launching:
 
-    jdaviz hybrid_manga_iris.fits --layout=cubeviz
+    jdaviz iris_cube_model.fits --layout=cubeviz
 
 The `Jdaviz` allows to:
 
@@ -48,4 +48,4 @@ The `Jdaviz` allows to:
 
 See for example this screenshot (datasets had different shapes, the rest of the data is zeroed):
 
-![jdaviz example](img/jdaviz_example.jpg)
+![jdaviz example](img/jdaviz_example.png)
