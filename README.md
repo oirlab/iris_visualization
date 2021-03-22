@@ -30,6 +30,28 @@ See an example below of a IRIS reduced frame loaded in DS9 with the `imexam` men
 
 [`Jdavis`](https://jdaviz.readthedocs.io/en/latest/index.html) is the new JWST python package which includes Cubeviz for visualizing data cubes from a spectrograph, SpecVis for 1D spectra and quick-look analysis and MOSViz for multi-object spectrographs.
 
+### Install jdaviz
+
+Create a dedicated `conda` environment by prefix or name with the requirements that need to be compiled:
+
+    conda create --prefix=~/jdaviz -c glueviz -c conda-forge python==3.8 astropy glueviz voila glue-jupyter asteval
+    conda create --name=jdaviz -c glueviz -c conda-forge python==3.8 astropy glueviz voila glue-jupyter asteval
+
+Then install `jdaviz` with `pip`:
+
+    pip install jdaviz
+    
+### Jdaviz on Galactica
+
+    $ conda activate /data/software/repo/anaconda3/envs/jdaviz
+    
+After this you should have `jdaviz` in your path:
+
+    $ which jdaviz                                                                                                         │·····
+    /data/software/repo/anaconda3/envs/jdaviz/bin/jdaviz
+    
+Open an issue in this repository if the environment is broken.
+
 ### Test data
 
 [On Figshare](https://figshare.com/articles/dataset/Jdaviz_IFU_test_files/13718131), I posted a simulated observation with the IRIS spectrograph (created by Nils-Erik Bjorn Rundquist).
