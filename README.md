@@ -71,3 +71,13 @@ The `Jdaviz` allows to:
 See for example this screenshot (datasets had different shapes, the rest of the data is zeroed):
 
 ![jdaviz example](img/jdaviz_example.png)
+
+### Customize jdaviz
+
+Each layout of `jdaviz` is given by a configuration in:
+
+    jdaviz/configs/cubeviz
+
+and a set of plugins.
+
+Plugins should be able to modify the application through events.
