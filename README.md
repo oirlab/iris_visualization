@@ -47,10 +47,10 @@ Then install `jdaviz` with `pip`:
     
 After this you should have `jdaviz` in your path:
 
-    $ which jdaviz                                                                                                         │·····
+    $ which jdaviz
     /data/software/repo/anaconda3/envs/jdaviz/bin/jdaviz
     
-Open an issue in this repository if the environment is broken.
+Open an issue in this repository if the environment is broken. In particular, if colormaps are broken, paste any warning you see in the terminal to https://github.com/oirlab/iris_visualization/issues/3.
 
 ### Test data
 
